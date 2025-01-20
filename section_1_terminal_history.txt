@@ -1,0 +1,133 @@
+    1  cd /Desktop/host
+    2  ls
+    3  cd Desktop
+    4  ls
+    5  pwd
+    6  cd .
+    7  ls
+    8  pwd
+    9  cd home
+   10  cd
+   11  cd
+   12  pwd
+   13  cd -
+   14  ls
+   15  cd /root/Desktop/host
+   16  pwd
+   17  git init
+   18  git config --global user.name fanzhaoyin
+   19  git config --global user.email fanzhao@ucsb.edu
+   20  git checkout -b main
+   21  git add .
+   22  git commit -m "init"
+   23  git remote add origin https://github.com/fanzhao728/129L_Wk1.git
+   24  git push -u origin main
+   25  cd /root/Desktop/host
+   26  ls
+   27  cd -
+   28  ls
+   29  cd /root/Desktop
+   30  ls
+   31  mkdir section_1
+   32  cd section_1
+   33  git init
+   34  git config --global user.name fanzhaoyin
+   35  git config --global user.email fanzhao@ucsb.edu
+   36  git checkout -b main
+   37  git add .
+   38  git commit -m "init"
+   39  git add .
+   40  git commit -m "init"
+   41  git status
+   42  echo "Git for Sec_1" > initial.txt
+   43  ls
+   44  git add .
+   45  git status
+   46  git commit -m "init"
+   47  git remote add origin https://github.com/fanzhao728/129L_sec1
+   48  git push -u origin main
+   49  echo "(this is a message from local main branch)">> src_info.txt
+   50  ls
+   51  cat src_info.txt
+   52  git add sec_info.txt
+   53  git add src_info.txt
+   54  git commit -m "Add a message from the local main branch"
+   55  git status
+   56  git log
+   57  git reset HEAD~1
+   58  git status
+   59  git log
+   60  mkdir src
+   61  cd src
+   62  echo "(this is a message from local main branch)">> src_info.txt
+   63  git add src_info.txt
+   64  git cat src_info.txt
+   65  git commit -m "Add a message from the local main branch"
+   66  git push origin main
+   67  cat src_info.txt
+   68  git checkout -b feature_branch
+   69  echo"(this is a message from local feature branch)">> src_info.txt
+   70  echo "(this is a message from local feature branch)">> src_info.txt
+   71  echo "(this is a message from local feature branch to test_info)">> ../test/test_info.txt
+   72  mkdir test
+   73  echo "(this is a message from local feature branch to test_info)">> ../test/test_info.txt
+   74  ls
+   75  echo "(this is a message from local feature branch to test_info)">> /root/Desktop/section_1/src/test
+   76  echo "(this is a message from local feature branch to test_info)">> /root/Desktop/section_1/src/test/test_info.txt
+   77  git status
+   78  git add .
+   79  git status
+   80  ls
+   81  mv test ..
+   82  ls
+   83  git status
+   84  cd ..
+   85  ls
+   86  rm src_info.txt
+   87  ls
+   88  cd test
+   89  ls
+   90  cd ..
+   91  git add test/test_info.txt
+   92  git status
+   93  git rm src/test/test_info.txt
+   94  git status
+   95  git commit -m "new branch with two changes"
+   96  git push -u origin feature_branch
+   97  git log
+   98  git checkout main
+   99  git merge feature
+  100  git merge feature_branch
+  101  git status
+  102  git log
+  103  git push origin main
+  104  git fetch origin
+  105  git status
+  106  git fetch origin
+  107  git status
+  108  git diff main origin/main
+  109  git reset --hard HEAD~1
+  110  cat src_info.txt
+  111  cd src 
+  112  cat src_info.txt
+  113  git reset --hard 628cb2c7f87fc952eb622e2fdf692503c59885ed
+  114  cat src_info.txt
+  115  git pull origin main
+  116  cd ..
+  117  ls
+  118  cd ..
+  119  mkdir git_clone
+  120  cd git_clone/
+  121  git clone https://github.com/zhwangs/Physics129_git_example.git
+  122  git clone https://github.com/fanzhao728/129L_sec1
+  123  ls
+  124  cd 129L_sec1
+  125  ls
+  126  git status
+  127  git log
+  128  pwd
+  129  cd /root/Desktop
+  130  cd 129L_sec1
+  131  ls
+  132  cd section_1
+  133  history>> section_1_terminal_history.txt
